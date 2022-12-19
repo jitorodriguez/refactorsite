@@ -1,9 +1,14 @@
-.mission{
+.mission {
 	background-color:#ffffff;
 	padding-top:50px;
 	padding-bottom:50px;
 	text-align: center;
-	font-size:20px;
+	font-size:26px;
 	color: #007777;
 	margin-bottom:40px;
+}
+
+.imageFit{ 
+	min-width: 60%;
+	max-width: 60%;
 }
