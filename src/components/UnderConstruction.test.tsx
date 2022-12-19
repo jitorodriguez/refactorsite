@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import UnderConstruction from './UnderConstruction';
 
@@ -15,9 +14,9 @@ describe('UnderConstruction component', () => {
     test('Validate image loaded from halopedia site', () => {
         render(<UnderConstruction />);
 
-        const image = screen.getByRole('img');
+        const imageElement = screen.getByRole('img');
 
-        expect(image).toHaveAttribute('alt', 'Unngoy holding plasma pistol looking to the left.');
-        expect(image).toHaveAttribute('src', 'https://halo.wiki.gallery/images/c/c4/HINF-Unggoy_Conscript.png');
+        expect(imageElement).toHaveAttribute('alt', 'Unngoy holding plasma pistol looking to the left.');
+        expect(imageElement).toHaveAttribute('src', 'https://halo.wiki.gallery/images/c/c4/HINF-Unggoy_Conscript.png');
     });
 });

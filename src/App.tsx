@@ -1,5 +1,5 @@
 import Mission from "./components/Mission";
-import quote from "./assets/quote.jpg"
+import quote from "./assets/quote.jpg";
 
 function App() {
   return (
