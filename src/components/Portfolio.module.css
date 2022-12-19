@@ -1,0 +1,9 @@
+.portfolio{
+    background-color:#d5d5d5;
+    height:400px;
+}
+
+.portfolio > div{
+    margin: 0px 40px 40px 40px;
+    padding-top: 1px;
+}
