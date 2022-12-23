@@ -2,19 +2,19 @@ import { useState } from "react";
 
 import classes from "./PortfolioItem.module.css";
 
-const PortfolioItem = () => {
+const PortfolioItem: React.FC<{ title: string, text: string }> = (props) => {
+  const [isExpanded, setExpanded] = useState(false);
 
-    const [isExpanded, setExpanded] = useState(false);
+  const portfolioItemClickHandler = () => {
+    setExpanded(!isExpanded);
+  };
 
-    const portfolioItemClickHandler = () => {
-      setExpanded(!isExpanded)
-    }
-    
-    
   return (
-    <div className={classes.panelContainer}>
-      <div onClick={portfolioItemClickHandler} className={classes.panelHeader}>Sample Text</div>
-      {isExpanded && <div className={classes.panelContent}></div>}
+    <div className={classes.accordion}>
+      <div className={classes.accordionTitle} onClick={portfolioItemClickHandler}>
+        <span>{props.title}</span>
+      </div>
+      <div className={classes.accordionContent} aria-expanded={!isExpanded}>{props.text}</div>
     </div>
   );
 };
