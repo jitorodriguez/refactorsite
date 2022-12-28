@@ -1,0 +1,19 @@
+.carouselContainer{
+    background: gray;
+    display:flex;
+    flex-wrap: no-wrap;
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.carouselItem{
+    height: auto;
+    min-width: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
