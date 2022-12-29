@@ -4,6 +4,13 @@
 }
 
 .portfolio > div{
-    margin: 0px 80px 40px 80px;
+    margin: 0 auto;
+    width: 70%;
     padding-top: 1px;
+}
+
+@media (max-width: 800px) {
+    .portfolio > div {
+        width: 95%;
+    }
 }

@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import classes from "./Portfolio.module.css";
 
 import ProjectList from '../template/ProjectData';
@@ -23,7 +23,7 @@ const Portfolio = () => {
       <div>
         <h1>Portfolio</h1>
         {ProjectList.map((project) => {
-          return(<PortfolioItem item={project} key={project.id} isOpen={project.id == activeItem} setActive={manageActiveItem}/>);
+          return(<PortfolioItem item={project} key={project.id} isOpen={project.id === activeItem} setActive={manageActiveItem}/>);
         })}
       </div>
     </div>

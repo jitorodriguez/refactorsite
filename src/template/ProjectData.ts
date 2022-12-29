@@ -9,10 +9,10 @@ import CabalEffect5 from "../assets/img/CabalEffect5.jpg";
 import CabalEffect6 from "../assets/img/CabalEffect6.jpg";
 
 //Horseshoe Project Images
-import Horseshoe1 from "../assets/img/GreekDefault.jpg";
+import Horseshoe1 from "../assets/img/ReelAnimation.gif";
 import Horseshoe2 from "../assets/img/MafiaDefault.jpg";
-import Horseshoe3 from "../assets/img/MedievalDefault.jpg";
-import Horseshoe4 from "../assets/img/ReelAnimation.gif";
+import Horseshoe3 from "../assets/img/GreekDefault.jpg";
+import Horseshoe4 from "../assets/img/MedievalDefault.jpg";
 import Horseshoe5 from "../assets/img/ReelSlotsDefault.jpg";
 import Horseshoe6 from "../assets/img/SkillGame.gif";
 
