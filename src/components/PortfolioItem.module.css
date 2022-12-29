@@ -17,16 +17,13 @@
     background-color: black;
     font-weight: 500;
     display: flex;
+    padding-left: 20px;
     height: 80px;
+    line-height: 80px;
 }
 
 .accordionTitle:hover {
     cursor: pointer;
-}
-
-.accordionTitle > span{
-    padding-left: 20px;
-    line-height: 80px;
 }
 
 .accordionContent {
@@ -37,7 +34,7 @@
     background-color: #e1e8f9;
 }
 
-.accordionContent[aria-expanded="true"] {
+.accordionContent[aria-expanded="false"] {
     max-height: 0px;
     transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 }
@@ -56,6 +53,14 @@
 .bottomContent {
     display: block;
     padding: 10px;
+}
+
+.bottomContent > p {
+    font-size: 16px;
+}
+
+.bottomContent > em {
+    font-size: 14px;
 }
 
 .bottomContent > h2{

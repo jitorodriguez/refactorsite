@@ -11,9 +11,9 @@ const PortfolioItem: React.FC<{ item: Project, isOpen: boolean, setActive: (item
   return (
     <div className={classes.accordion}>
       <div className={classes.accordionTitle} onClick={portfolioItemClickHandler}>
-        <span>{props.item.title}</span>
+        {props.item.title}
       </div>
-      <div className={classes.accordionContent} aria-expanded={!props.isOpen}>
+      <button className={classes.accordionContent} aria-expanded={props.isOpen}>
         <div className={classes.topContent}>
           <Carousel images={props.item.images}/>
         </div>
@@ -22,7 +22,7 @@ const PortfolioItem: React.FC<{ item: Project, isOpen: boolean, setActive: (item
           <em>SPECIFICATIONS: {props.item.specifications}</em>
           <p>{props.item.description}</p>
         </div>
-      </div>
+      </button>
     </div>
   );
 };
