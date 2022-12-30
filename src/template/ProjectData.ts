@@ -32,7 +32,7 @@ import Vedic3 from "../assets/img/SegmentingTableShort.gif";
 import Vedic4 from "../assets/img/Teleportation.gif"
 
 
-const ProjectList = [
+const ProjectList: Project[] = [
     new Project(
         "VEDIC",
         "Unity, C#, Leap Motion, Oculus DK2, MySQL",
