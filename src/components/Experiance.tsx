@@ -5,8 +5,8 @@ import classes from "./Experiance.module.css";
 
 const Experiance = () => {
   return (
-    <div className={classes.ExperianceContainer}>
-      <h1>Sample Title</h1>
+    <div className={classes.container}>
+      <h1>Experiance</h1>
       {JobsList.map((job) => {
         return (
           <InfoCard

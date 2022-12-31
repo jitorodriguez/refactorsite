@@ -6,11 +6,11 @@ const InfoCard: React.FC<{
   text?: string;
 }> = (props) => {
   return (
-    <div>
-      <div className={classes.Card}>
-        { props.title && <h2>{props.title}</h2>}
-        { props.subTitle && <em>{props.subTitle}</em>}
-        { props.text && <p className={classes.text}>{props.text}</p>}
+    <div className={classes.Card}>
+      {props.title && <h2>{props.title}</h2>}
+      <div className={classes.CardContent}>
+        {props.subTitle && <em>{props.subTitle}</em>}
+        {props.text && <p className={classes.text}>{props.text}</p>}
       </div>
     </div>
   );

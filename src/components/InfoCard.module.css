@@ -3,6 +3,17 @@
 }
 
 .Card{
-    padding: 0px 10px 0px 10px;
+    border-radius: 20px;
+    overflow: hidden;
     background-color: #77c9d4;
+    margin-bottom: 20px;
+}
+
+.Card > h2 {
+    background-color: #e6f9fd;
+    padding-left: 5px;
+}
+
+.CardContent{
+    padding-left: 5px;
 }
