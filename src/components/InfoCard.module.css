@@ -3,6 +3,7 @@
 }
 
 .Card{
+    border: 2px solid black;
     border-radius: 20px;
     overflow: hidden;
     background-color: #77c9d4;

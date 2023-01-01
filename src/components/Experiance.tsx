@@ -14,6 +14,7 @@ const Experiance = () => {
             title={job.title}
             subTitle={job.specifications}
             text={job.description}
+            listedText={job.specifics}
           />
         );
       })}

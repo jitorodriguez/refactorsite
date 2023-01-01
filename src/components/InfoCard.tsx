@@ -4,6 +4,7 @@ const InfoCard: React.FC<{
   title?: string;
   subTitle?: string;
   text?: string;
+  listedText?: string[];
 }> = (props) => {
   return (
     <div className={classes.Card}>
@@ -11,6 +12,12 @@ const InfoCard: React.FC<{
       <div className={classes.CardContent}>
         {props.subTitle && <em>{props.subTitle}</em>}
         {props.text && <p className={classes.text}>{props.text}</p>}
+        <ul>
+          {props.listedText &&
+            props.listedText.map((listItem) => {
+              return <li>{listItem}</li>;
+            })}
+        </ul>
       </div>
     </div>
   );
