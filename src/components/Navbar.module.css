@@ -1,0 +1,36 @@
+.navbar {
+  min-width: 400px;
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  border-width: 0 0 1px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #222;
+  color: #07889b;
+}
+
+.leftBar {
+  padding-left: 10px;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.leftBar > em{
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+
+.rightBar {
+  float: right;
+}
+
+@media (max-width: 600px) {
+    .leftBar > em{
+        display: none;
+    }
+}
+

@@ -4,10 +4,12 @@ import Portfolio from "./components/Portfolio";
 import quote from "./assets/quote.jpg";
 import { Fragment } from "react";
 import Experiance from "./components/Experiance";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Fragment>
+      <Navbar/>
       <Mission
         title="Mission"
         message="Pursue oppurtunities with efficient work ethic and determination within the realms of software development, and then some. With this in mind, I continue to pursue objectives that amplify my development skills and interests hand in hand."
