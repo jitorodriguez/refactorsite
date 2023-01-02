@@ -7,7 +7,7 @@ const TSSE = [
   "Standup and manage RHEL7/RHEL8 linux systems for diagnosing issues and handling server work, creating bash scripts that automated workloads reducing time spent on repeated procedures by 80%",
   "Conduct meetings with 3rd party vendor providing technical guidance and requirements for client specific web applications",
   "Manage the SQL Requests pipeline executing over 100 requests creating databases for test and customer systems spanning over 20+ different releases",
-  "Removed 1000+ compiler warnings and reduced log noise for customer facing messaging by 60% in core server applications (C / C++)",
+  "Removed 1000+ compiler warnings and refactored log messaging in core server applications (C / C++)",
 ];
 const TSDSI = [
   "Evaluate existing MariaDB database and PHP endpoints resulting in demonstrating 3 new customer KPI targets that could be catpured with predictive analytics platforms",

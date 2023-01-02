@@ -14,8 +14,8 @@ const InfoCard: React.FC<{
         {props.text && <p className={classes.text}>{props.text}</p>}
         <ul>
           {props.listedText &&
-            props.listedText.map((listItem) => {
-              return <li>{listItem}</li>;
+            props.listedText.map((listItem, index) => {
+              return <li key={index} >{listItem}</li>;
             })}
         </ul>
       </div>
