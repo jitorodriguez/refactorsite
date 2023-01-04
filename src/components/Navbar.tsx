@@ -18,16 +18,19 @@ const Navbar = () => {
           link="https://www.linkedin.com/in/jorge-rodriguez-605b63195/"
           linkText="LinkedIn"
           img={linkedinImage}
+          altImg="LinkedIn Logo"
         ></Link>
         <Link
           link="https://github.com/jitorodriguez"
           linkText="Github"
           img={gitImage}
+          altImg="Github Logo"
         ></Link>
         <Link
           link="http://jitorodriguez.com/files/RodriguezResumeSite.pdf"
           linkText="Download Resume"
           img={pdfImage}
+          altImg="PDF Download Logo"
         ></Link>
       </div>
     </nav>

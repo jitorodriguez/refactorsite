@@ -2,7 +2,7 @@ import { Fragment } from "react";
 
 import classes from "./Link.module.css";
 
-const Link: React.FC<{ link: string; linkText: string; img?: string }> = (
+const Link: React.FC<{ link: string; linkText: string; img?: string; altImg?: string }> = (
   props
 ) => {
   return (
@@ -16,7 +16,7 @@ const Link: React.FC<{ link: string; linkText: string; img?: string }> = (
             <img
               className={classes.img}
               src={props.img}
-              alt="Sample Text"
+              alt={props.altImg}
             ></img>
           </a>
         )}
