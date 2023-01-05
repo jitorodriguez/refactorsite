@@ -18,3 +18,13 @@
 .CardContent{
     padding-left: 5px;
 }
+
+.CardFooter{
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.CardFooter > p{
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+}

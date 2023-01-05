@@ -1,10 +1,10 @@
 import Job from "../models/Job";
 
 const TSSE = [
-  "Created client workflows bridging the gap between previous (C# / .NET) and new web client (PHP, JavaScript / Bootstrap 4 /CSS) by creating 15+ complex workflow screens accounting for more than 20% of the solution while engaging in enhancement / defect work",
+  "Created client workflows bridging the gap between previous (C# / .NET) and new web client (PHP, JavaScript / Bootstrap 4 /CSS) by implementing complex workflow screens that accounted for more than 25% of the solution while engaging in enhancement / defect work.",
   "Aid team in adoption of modern technologies for new cloud initiative (ReactJS, TypeScript, NodeJS, Git, Docker)",
   "Reduce case backlog for legacy systems addressing both server (RHEL7, C/C++) and client side (C# / .NET) workflows",
-  "Standup and manage RHEL7/RHEL8 linux systems for diagnosing issues and handling server work, creating bash scripts that automated workloads reducing time spent on repeated procedures by 80%",
+  "Standup and manage RHEL7/RHEL8 linux systems for diagnosing issues and handling server work, creating bash scripts that automated workloads reducing time spent on repeated procedures by roughly 80%",
   "Conduct meetings with 3rd party vendor providing technical guidance and requirements for client specific web applications",
   "Manage the SQL Requests pipeline executing over 100 requests creating databases for test and customer systems spanning over 20+ different releases",
   "Removed 1000+ compiler warnings and refactored log messaging in core server applications (C / C++)",
@@ -30,25 +30,35 @@ const JobsList: Job[] = [
     "Toptech Systems - Software Engineer I & II",
     "PHP, Javascript, CSS, HTML-Bootstrap 4 (Full-stack Client development) ----- ReactJS / TypeScript, NodeJS, Docker (Cloud Initiative)  -----  C/C++, C# / .NET framework, Bash (Legacy Client and Server Development)  -----  MySQL (Administrative)",
     "Full stack software development in over 3 different technology stacks for different product solutions. Being a part of new development teams charged with creating new Web applications from requirements gathering, design, to implementation for new modernization and cloud initatives.",
-    TSSE
+    TSSE,
+    ["Toptech Systems", "1124 Florida Central Pkwy", "Longwood, FL 32750"]
   ),
   new Job(
     "Toptech Systems - Data Scientist Intern",
     "MySQL, PHP",
     "Tasked with evaluating existing Data analytics solution and determining new customer KPIs that can be created from assistance with 3rd party vendors big data predictive analytics platforms.",
-    TSDSI
+    TSDSI,
+    ["Toptech Systems", "1124 Florida Central Pkwy", "Longwood, FL 32750"]
   ),
   new Job(
     "Sweepstakes Reveal System - Freelance",
     "C# / Unity, NewtonSoft",
     "Developing a slot-machine front-end user application that integrates with a sweepstakes system coupled with a menu system for auto-updating and navigation to different themed variants. Uses Unity (C#) and NewtonSoft for server integration.",
-    SRSF
+    SRSF,
+    ["Dr. Leinecker", "Phone Number: (336)-394-8830"]
   ),
   new Job(
     "Teaching Assistant",
     "Java, Bash scripting",
     "Assist students with course materials while collaborating with faculty to create assignments to serve as extended learning material for adept students. Wrote assignments covering different object-oriented design patterns.",
-    TA
+    TA,
+    [
+      "Department of Computer Science",
+      "University of Central Florida",
+      "4328 Scorpius Street",
+      "Building 116-Room 346",
+      "Orlando, FL 32816",
+    ]
   ),
 ];
 

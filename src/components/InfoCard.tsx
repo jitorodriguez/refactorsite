@@ -5,6 +5,7 @@ const InfoCard: React.FC<{
   subTitle?: string;
   text?: string;
   listedText?: string[];
+  footerText?: string[];
 }> = (props) => {
   return (
     <div className={classes.Card}>
@@ -15,9 +16,15 @@ const InfoCard: React.FC<{
         <ul>
           {props.listedText &&
             props.listedText.map((listItem, index) => {
-              return <li key={index} >{listItem}</li>;
+              return <li key={index}>{listItem}</li>;
             })}
         </ul>
+      </div>
+      <div className={classes.CardFooter}>
+        {props.footerText &&
+          props.footerText.map((text) => {
+            return <p>{text}</p>;
+          })}
       </div>
     </div>
   );
