@@ -66,3 +66,8 @@
 .bottomContent > h2{
     color: #e37222;
 }
+
+.footer{
+    float: right;
+    padding: 5px;
+}

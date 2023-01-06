@@ -1,7 +1,7 @@
 import Job from "../models/Job";
 
 const TSSE = [
-  "Created client workflows bridging the gap between previous (C# / .NET) and new web client (PHP, JavaScript / Bootstrap 4 /CSS) by implementing complex workflow screens that accounted for more than 25% of the solution while engaging in enhancement / defect work.",
+  "Created client workflows bridging the gap between previous (C# / .NET) and new web client (PHP, JavaScript / Bootstrap 4 /CSS) by implementing complex workflow screens accounting for more than 25% of the solution while engaging in enhancement / defect work.",
   "Aid team in adoption of modern technologies for new cloud initiative (ReactJS, TypeScript, NodeJS, Git, Docker)",
   "Reduce case backlog for legacy systems addressing both server (RHEL7, C/C++) and client side (C# / .NET) workflows",
   "Standup and manage RHEL7/RHEL8 linux systems for diagnosing issues and handling server work, creating bash scripts that automated workloads reducing time spent on repeated procedures by roughly 80%",
@@ -41,14 +41,14 @@ const JobsList: Job[] = [
     ["Toptech Systems", "1124 Florida Central Pkwy", "Longwood, FL 32750"]
   ),
   new Job(
-    "Sweepstakes Reveal System - Freelance",
+    "Horseshoe: Sweepstakes Reveal System - Freelance",
     "C# / Unity, NewtonSoft",
     "Developing a slot-machine front-end user application that integrates with a sweepstakes system coupled with a menu system for auto-updating and navigation to different themed variants. Uses Unity (C#) and NewtonSoft for server integration.",
     SRSF,
     ["Dr. Leinecker", "Phone Number: (336)-394-8830"]
   ),
   new Job(
-    "Teaching Assistant",
+    "University of Central Florida - Teaching Assistant",
     "Java, Bash scripting",
     "Assist students with course materials while collaborating with faculty to create assignments to serve as extended learning material for adept students. Wrote assignments covering different object-oriented design patterns.",
     TA,
