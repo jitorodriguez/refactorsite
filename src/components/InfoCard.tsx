@@ -2,6 +2,7 @@ import classes from "./InfoCard.module.css";
 
 const InfoCard: React.FC<{
   title?: string;
+  titleNote?: string
   subTitle?: string;
   text?: string;
   listedText?: string[];
@@ -9,7 +10,12 @@ const InfoCard: React.FC<{
 }> = (props) => {
   return (
     <div className={classes.Card}>
-      {props.title && <h2>{props.title}</h2>}
+      {props.title && (
+        <h2>
+          {props.title}
+          {props.titleNote && <em>{props.titleNote}</em>}
+        </h2>
+      )}
       <div className={classes.CardContent}>
         {props.subTitle && <em>{props.subTitle}</em>}
         {props.text && <p className={classes.text}>{props.text}</p>}

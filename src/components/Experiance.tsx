@@ -12,6 +12,7 @@ const Experiance = () => {
           <InfoCard
             key={job.title}
             title={job.title}
+            titleNote={job.date}
             subTitle={job.specifications}
             text={job.description}
             listedText={job.specifics}
