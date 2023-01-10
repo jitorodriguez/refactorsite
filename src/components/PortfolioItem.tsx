@@ -2,6 +2,7 @@ import Carousel from "./carousel";
 import Link from "./Link";
 import classes from "./PortfolioItem.module.css";
 import Project from "../models/Project";
+import {FaPlus, FaMinus} from "react-icons/fa"
 
 const PortfolioItem: React.FC<{ item: Project, isOpen: boolean, setActive: (itemId: string, open: boolean) => void }> = (props) => {
 
@@ -9,10 +10,13 @@ const PortfolioItem: React.FC<{ item: Project, isOpen: boolean, setActive: (item
     props.setActive(props.item.id, !props.isOpen);
   };
 
+  const icon = props.isOpen ? <FaMinus className={classes.expandIcon} /> : <FaPlus className={classes.expandIcon}/>;
+
   return (
     <div className={classes.accordion}>
       <div className={classes.accordionTitle} onClick={portfolioItemClickHandler}>
         {props.item.title}
+        <div className={classes.expandIcon}>{icon}</div>
       </div>
       <button className={classes.accordionContent} aria-expanded={props.isOpen}>
         <div className={classes.topContent}>

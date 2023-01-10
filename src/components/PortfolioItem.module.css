@@ -71,3 +71,8 @@
     float: right;
     padding: 5px;
 }
+
+.expandIcon{
+    margin-left: auto;
+    padding-right: 10px;
+}
