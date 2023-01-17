@@ -66,4 +66,32 @@ describe("Portfolio Item Component", () => {
 
     expect(isClicked).toHaveReturnedTimes(1);
   });
+  test("Link is loaded and displayed", () => {
+    const project = ProjectList[0];
+    render(<PortfolioItem item={project} isOpen={true} setActive={() => {}} />);
+
+    const linkElement = screen.getByRole("link");
+    expect(linkElement).toBeInTheDocument();
+  });
+  test("Verify link URL is set", () => {
+    const project = ProjectList[0];
+    render(<PortfolioItem item={project} isOpen={true} setActive={() => {}} />);
+
+    const linkElement = screen.getByRole("link");
+    expect(linkElement).toHaveAttribute('href', "https://github.com/WilliamRADFunk/vedic" );
+  });
+  test("Panel icon shows plus icon when not open", () => {
+    const project = ProjectList[0];
+    render(<PortfolioItem item={project} isOpen={false} setActive={() => {}} />);
+
+    const plusElement = screen.getByTitle("plus");
+    expect(plusElement).toBeInTheDocument();
+  });
+  test("Panel icon shows minus icon when open", () => {
+    const project = ProjectList[0];
+    render(<PortfolioItem item={project} isOpen={true} setActive={() => {}} />);
+
+    const plusElement = screen.getByTitle("minus");
+    expect(plusElement).toBeInTheDocument();
+  });
 });

@@ -10,7 +10,7 @@ const PortfolioItem: React.FC<{ item: Project, isOpen: boolean, setActive: (item
     props.setActive(props.item.id, !props.isOpen);
   };
 
-  const icon = props.isOpen ? <FaMinus className={classes.expandIcon} /> : <FaPlus className={classes.expandIcon}/>;
+  const icon = props.isOpen ? <FaMinus title="minus" className={classes.expandIcon} /> : <FaPlus title="plus" className={classes.expandIcon}/>;
 
   return (
     <div className={classes.accordion}>

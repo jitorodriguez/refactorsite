@@ -3,6 +3,7 @@ import InfoCard from "./InfoCard";
 
 describe("Info Card Component", () => {
   const textToValidate = "Testing Text";
+  const subTextToValidate = "Subtext";
 
   test("Validate title appears when title is set", () => {
     render(<InfoCard title={textToValidate} />);
@@ -30,5 +31,10 @@ describe("Info Card Component", () => {
 
     const listedItems = screen.getAllByText(textToValidate);
     expect(listedItems.length).toBe(textList.length);
+  });
+  test("Validate title note appears when set with a title", () => {
+    render(<InfoCard title={textToValidate} titleNote={subTextToValidate} />);
+    const titleNoteElement = screen.getByText(subTextToValidate);
+    expect(titleNoteElement).toBeInTheDocument();
   });
 });
